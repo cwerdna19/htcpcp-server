@@ -56,5 +56,5 @@ class Serv(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(bytes('POST deprecated.', 'utf-8'))
 
-httpd = HTTPServer(('localhost', 8080), Serv)
-httpd.serve_forever()
+htcpcpd = HTTPServer(('localhost', 8080), Serv)
+htcpcpd.serve_forever()
